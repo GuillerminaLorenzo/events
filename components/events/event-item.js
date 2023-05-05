@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function EventItem(props) {
   const { id, title, date, location, image } = props;
 
-  const formattedDate = new Date(date).toLocaleDateString("es-US", {
+  const formattedDate = new Date(date).toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
     year: "numeric",
