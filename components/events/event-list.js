@@ -6,9 +6,15 @@ export default function EventList(props) {
   return (
     <ul>
       {items.map((event) => (
-        <EventItem />
+        <EventItem
+          key={event.id}
+          id={event.id}
+          title={event.title}
+          date={event.date}
+          location={event.location}
+          image={event.image}
+        />
       ))}
     </ul>
   );
 }
-// key: {event.id} id: {event.id} title: {event.title} date:{event.date} location: {event.location} image: {event.image}
