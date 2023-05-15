@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import EventItemStyle from "./event-item.module.css";
 import AddressIcon from "../icons/address-icon";
 import DateIcon from "../icons/date-icon";
@@ -19,7 +21,7 @@ export default function EventItem(props) {
 
   return (
     <li className={EventItemStyle.item}>
-      <img src={"/" + image} alt={title} />
+      <Image src={"/" + image} alt={title} width={340} height={160} />
       <div className={EventItemStyle.content}>
         <div className={EventItemStyle.summary}>
           <h2>{title}</h2>
